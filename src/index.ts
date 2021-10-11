@@ -1,9 +1,14 @@
 import express from 'express';
+import configureDI from "./config/di";
+import configureRouter from "./config/router";
 
-// rest of the code remains same
 const app = express();
 const PORT = 8000;
-app.get('/', (req, res) => res.send('Express + TypeScript Server'));
+
+const diContainer = configureDI();
+
+configureRouter(app, diContainer)
+
 app.listen(PORT, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${PORT}`);
 });
