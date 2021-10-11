@@ -1006,6 +1006,11 @@ responselike@^1.0.2:
   dependencies:
     lowercase-keys "^1.0.0"
 
+rsdi@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/rsdi/-/rsdi-2.1.0.tgz#c6a0eb3d6e4d8c4ded1b222e5ab3ca23c2900381"
+  integrity sha512-UiK2RTtu8Rdtg/ZURXub7BNJviFFY/W2GWtTiNkJWOSJ47PSNahuSMwMV5k7G5c50MyA5Gv12BYEChodg5ARyQ==
+
 safe-buffer@5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.2.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
