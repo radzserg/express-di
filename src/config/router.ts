@@ -5,6 +5,6 @@ import { IDIContainer } from "rsdi";
 export default function configureRouter(app: core.Express, diContainer: IDIContainer) {
   const usersController = diContainer.get(UsersController);
   app.route('/users')
-    .get(usersController.actionIndex)
-    .post(usersController.actionCreate);
+    .get(usersController.actionIndex.bind(usersController))
+    .post(usersController.actionCreate.bind(usersController));
 }
